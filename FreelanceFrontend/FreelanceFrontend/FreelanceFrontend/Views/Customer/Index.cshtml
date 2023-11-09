@@ -1,0 +1,68 @@
+﻿@model FreelanceFrontend.Models.DtoModels.ContactServiceDto
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 class="text-center  my-3">Services Available</h3>
+<div class="container">
+    <div class="row justify-content-center">
+@foreach (var item in Model.Services) {
+            <div class="card box-shadow col-md-4 mx-5 my-3 p-0" style="width: 17rem; border-top-left-radius:25px; border-top-right-radius:25px">
+        <img src="@item.ImageUrl" style="height:200px; width:auto;" class="card-img-top img-fluid" alt="Service Image">
+        <div class="card-body">
+            <h5 class="card-title">Provider: @item.Title</h5>
+            <p class="card-text">@item.Description</p>
+            <p class="card-text"><strong>Price: @item.Price/-</strong></p>
+                    <button id="myModal" class="btn btn-dark" onclick="myfunction()" value="@item.User.Email" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book Service</button>
+        </div>
+    </div>
+}
+    </div>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Contact Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="ContactProvider" asp-controller="Customer" method="post">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label asp-for="ContactViewModel.Subject" class="control-label"></label>
+                        <input asp-for="ContactViewModel.Subject" placeholder="Enter subject" class="form-control" />
+                        <span asp-for="ContactViewModel.Subject" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ContactViewModel.Body" class="control-label"></label>
+                        <input asp-for="ContactViewModel.Body" class="form-control" />
+                        <span asp-for="ContactViewModel.Body" class="text-danger"></span>
+                    </div>
+                    <input type="hidden" id="userId" asp-for="ContactViewModel.EmailTo" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" value="Send" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function myfunction() {
+        document.getElementById("userId").value = document.getElementById("myModal").value;
+    }
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

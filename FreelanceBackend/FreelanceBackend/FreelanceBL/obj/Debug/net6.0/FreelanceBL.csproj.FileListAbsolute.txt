@@ -1,0 +1,15 @@
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\bin\Debug\net6.0\FreelanceBL.deps.json
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\bin\Debug\net6.0\FreelanceBL.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\bin\Debug\net6.0\FreelanceBL.pdb
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\bin\Debug\net6.0\FreelanceDAL.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\bin\Debug\net6.0\FreelanceDAL.pdb
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.csproj.AssemblyReference.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.AssemblyInfoInputs.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.AssemblyInfo.cs
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.csproj.CoreCompileInputs.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.csproj.CopyComplete
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\refint\FreelanceBL.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\FreelanceBL.pdb
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\FreelanceBL\obj\Debug\net6.0\ref\FreelanceBL.dll

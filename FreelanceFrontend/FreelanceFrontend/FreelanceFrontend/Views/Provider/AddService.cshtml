@@ -1,0 +1,65 @@
+﻿@model ServiceDto
+@{
+    ViewData["Title"] = "Add";
+    string data = (string)TempData["ServiceType"];
+    List<ServiceType> services = JsonConvert.DeserializeObject<List<ServiceType>>(data);
+}
+
+<h3 class="text-center my-3">Add Service</h3>
+
+<hr />
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form asp-action="AddService" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ServiceTypeId" class="control-label my-2">Service Type</label>
+                <select asp-for="ServiceTypeId" class="form-control" asp-items='new SelectList(services,"ServiceTypeId","ServiceName")'>
+                    <option value="0">Select Service</option>
+                    @* <option value="0" selected>Select Service</option>
+                    @foreach (ServiceType service in services)
+                    {
+                    <option value="@service.ServiceTypeId">@service.ServiceName</option>
+                    } *@
+                </select>
+                <span asp-validation-for="ServiceTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary my-3" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

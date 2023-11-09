@@ -1,0 +1,77 @@
+﻿a {
+    cursor: pointer;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+h5 {
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 1px 1px rgba(72,78,85,.6);
+    box-shadow: 0 1px 1px rgba(72,78,85,.6);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+    .box-shadow:hover {
+        -webkit-box-shadow: 0 20px 40px rgba(72,78,85,.6);
+        box-shadow: 0 20px 40px rgba(72,78,85,.6);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+
+.card {
+    border-radius: 25px;
+}
+
+    .card img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .card svg {
+        position: absolute;
+        top: 19rem;
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+        filter: drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.2));
+    }
+
+    .card:hover svg {
+        filter: drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.4));
+    }
+
+i {
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    color: white;
+    font-size: 3rem;
+    background: rgb(238,174,202);
+    background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(211,210,231,1) 19%, rgba(11,39,73,1) 100%);
+    padding: 1rem;
+    border-radius: 100%;
+    transition: all .6s ease-in-out;
+}
+
+.card:hover i {
+    transform: rotate(-180deg);
+}
+
+i:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+}

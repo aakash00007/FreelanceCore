@@ -1,0 +1,12 @@
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\bin\Debug\net6.0\EmailService.deps.json
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\bin\Debug\net6.0\EmailService.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\bin\Debug\net6.0\EmailService.pdb
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.csproj.AssemblyReference.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfoInputs.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfo.cs
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.csproj.CoreCompileInputs.cache
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\refint\EmailService.dll
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\EmailService.pdb
+C:\New folder\Freelance_Aakash\FreelanceBackend\FreelanceBackend\EmailService\obj\Debug\net6.0\ref\EmailService.dll
